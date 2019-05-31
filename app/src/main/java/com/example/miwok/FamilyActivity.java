@@ -15,16 +15,16 @@ public class FamilyActivity extends AppCompatActivity {
 
         // Create an array of Strings to store the English words for numbers
         ArrayList<Word> word = new ArrayList<>();
-        word.add(new Word("father", "әpә"));
-        word.add(new Word("mother", "әṭa"));
-        word.add(new Word("son", "angsi"));
-        word.add(new Word("daughter", "tune"));
-        word.add(new Word("older brother", "taachi"));
-        word.add(new Word("younger brother", "chalitti"));
-        word.add(new Word("older sister", "teṭe"));
-        word.add(new Word("younger sister", "kolliti"));
-        word.add(new Word("grandmother", "ama"));
-        word.add(new Word("grandfather", "paapa"));
+        word.add(new Word("father", "әpә", R.drawable.family_father));
+        word.add(new Word("mother", "әṭa", R.drawable.family_mother));
+        word.add(new Word("son", "angsi", R.drawable.family_son));
+        word.add(new Word("daughter", "tune", R.drawable.family_daughter));
+        word.add(new Word("older brother", "taachi", R.drawable.family_older_brother));
+        word.add(new Word("younger brother", "chalitti", R.drawable.family_younger_brother));
+        word.add(new Word("older sister", "teṭe", R.drawable.family_older_sister));
+        word.add(new Word("younger sister", "kolliti", R.drawable.family_younger_sister));
+        word.add(new Word("grandmother", "ama", R.drawable.family_grandmother));
+        word.add(new Word("grandfather", "paapa", R.drawable.family_grandfather));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
