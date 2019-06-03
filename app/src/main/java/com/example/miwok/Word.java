@@ -14,22 +14,30 @@ public class Word {
     /**If no image is provided the imageResourceId will return the following value */
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    public Word(String defaultTranslation, String miwokTranslation){
+    /**MediaPlayer Resource ID for the word */
+    private int mediaPlayerID;
+
+
+    public Word(String defaultTranslation, String miwokTranslation, int mediaPlayerID){
         this.defaultTranslation = defaultTranslation;
         this.miwokTranslation = miwokTranslation;
+        this.mediaPlayerID = mediaPlayerID;
     }
 
-    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId){
+    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId, int mediaPlayerID){
         this.defaultTranslation = defaultTranslation;
         this.miwokTranslation = miwokTranslation;
         this.imageResourceId = imageResourceId;
+        this.mediaPlayerID = mediaPlayerID;
     }
 
     public String getDefaultTranslation() { return defaultTranslation; }
 
     public String getMiwokTranslation() { return miwokTranslation; }
 
-    public int getImageResourceId() {return imageResourceId; }
+    public int getImageResourceId() { return imageResourceId; }
+
+    public int getMediaPlayerID() { return mediaPlayerID; }
 
     /**Check whether the object has an image associated or not */
     public boolean hasImage(){
