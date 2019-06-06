@@ -45,6 +45,9 @@ public class ColorsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_model);
+        
+        // Create and setup {@link AudioManager} to request Audio Focus
+        mAudioManager =(AudioManager)getSystemService(Context.AUDIO_SERVICE);
 
         // Create and setup {@link AudioManager} to request Audio Focus
         mAudioManager =(AudioManager)getSystemService(Context.AUDIO_SERVICE);
