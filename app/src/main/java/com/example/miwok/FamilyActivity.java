@@ -1,5 +1,6 @@
 package com.example.miwok;
 
+import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
@@ -44,6 +45,10 @@ public class FamilyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_model);
+
+        // Create and setup {@link AudioManager} to request Audio Focus
+        mAudioManager =(AudioManager)getSystemService(Context.AUDIO_SERVICE);
+
 
         // Create an array of Strings to store the English words for numbers
         final ArrayList<Word> word = new ArrayList<>();
