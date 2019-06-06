@@ -45,6 +45,10 @@ public class PhrasesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_model);
+
+        // Setting an up button.
+        // By clicking this button we will get back to the Main Activity
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         
         // Create and setup {@link AudioManager} to request Audio Focus
         mAudioManager =(AudioManager)getSystemService(Context.AUDIO_SERVICE);
